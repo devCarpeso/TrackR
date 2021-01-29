@@ -1,0 +1,19 @@
+body, html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 60px 1fr;
+}
+.container > nav {
+    border-bottom: 1px solid #e4e4e4;
+}
+.container > main {
+
+}
