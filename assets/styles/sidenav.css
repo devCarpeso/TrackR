@@ -1,0 +1,66 @@
+
+.sidenav {
+    /* first, set the display mode to flex */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    /* set Z-index higher than all elements */
+    z-index: 99;
+
+    /* set width  and height to 100% */
+    height: 100% !important;
+    width: 100% !important;
+
+    /* set position of sidenav to the left */
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    /* set background of sidenav to an opaque black */
+    background-color: rgba(0, 0, 0, 0.5);
+
+    /* set visibility of sidenav to hidden. */
+    visibility: hidden;
+    opacity: 0;
+
+    /* finally, set all transitions to ease in for .3 seconds */
+    transition: all 0.2s ease;
+}
+.close-button {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 60px;
+    width: 60px;
+
+    background-image: url(../icons/fi-rs-cross.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+    filter: invert(1);
+}
+.side-menu {
+    background: rgb(36, 36, 36);
+    width: 0;
+    height: 100%;
+
+    transition: all 0.5s ease;
+
+    display: grid;
+    grid-template-rows: 180px 1fr 60px;
+}
+.title {
+    background-color: rgb(12, 12, 12);
+}
+.menu {
+    
+}
+.login {
+    background-color: rgb(12, 12, 12);
+}
+.show {
+    width: 70%;
+    visibility: visible;
+    opacity: 1;
+}
